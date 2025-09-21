@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habipush - Habit Control</title>
+    <link rel="icon" type="image/png" href="app_icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background-color: #fbfbfd;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 28px;
+            font-weight: 400;
+            color: #86868b;
+            margin-bottom: 60px;
+            line-height: 1.3;
+        }
+
+        .description {
+            font-size: 21px;
+            color: #86868b;
+            margin-bottom: 60px;
+            line-height: 1.5;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: #007aff;
+            color: white;
+            padding: 18px 36px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 19px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-bottom: 40px;
+        }
+
+        .download-button:hover {
+            background: #0056cc;
+            transform: translateY(-1px);
+        }
+
+        .download-button:active {
+            transform: translateY(0);
+        }
+
+        .features-section {
+            margin-bottom: 80px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+
+        .feature-card p {
+            font-size: 17px;
+            color: #86868b;
+            line-height: 1.5;
+        }
+
+        .use-cases-section {
+            background: #f5f5f7;
+            border-radius: 18px;
+            padding: 60px 40px;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .use-cases-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1d1d1f;
+        }
+
+        .use-cases-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .use-cases-list li {
+            font-size: 17px;
+            color: #86868b;
+            margin-bottom: 16px;
+            padding-left: 24px;
+            position: relative;
+            text-align: left;
+        }
+
+        .use-cases-list li::before {
+            content: "✓";
+            color: #34c759;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .use-cases-list li {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .use-cases-list .example {
+            font-size: 15px;
+            color: #86868b;
+            font-style: italic;
+            margin-left: 0;
+        }
+
+        .footer-links {
+            text-align: center;
+            border-top: 1px solid #e5e5e7;
+            padding-top: 40px;
+            margin-top: 40px;
+        }
+
+        .footer-links a {
+            color: #007aff;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 20px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 0;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .tagline {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 19px;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .feature-card {
+                padding: 30px 20px;
+            }
+
+            .use-cases-section {
+                padding: 40px 20px;
+            }
+
+            .footer-links a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="app_icon.png" alt="Habipush App Icon" class="app-icon">
+            <h1>Habipush</h1>
+            <p class="tagline">Take control of your habits effortlessly. Set custom reminders and track progress with quick check-ins right from notifications.</p>
+            <a href="#" class="download-button">Download on App Store</a>
+        </div>
+
+        <div class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⏰</span>
+                    <h3>Smart Reminders</h3>
+                    <p>Custom intervals from minutes to days. Set up the perfect reminder schedule that fits your lifestyle and goals.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">✅</span>
+                    <h3>Quick Check-ins</h3>
+                    <p>Respond directly from notifications. Check in without even opening the app.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Progress Charts</h3>
+                    <p>Visualize your consistency with beautiful charts. See your progress over time and stay motivated.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Lightweight & Simple</h3>
+                    <p>Clean, fast, and intuitive. No clutter, no complexity — just the essentials you need to build lasting habits.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-cases-section">
+            <h2>Perfect For</h2>
+            <ul class="use-cases-list">
+                <li>
+                    <strong>People who want to control unconscious habits</strong>
+                    <span class="example">Check posture, relax shoulders</span>
+                </li>
+                <li>
+                    <strong>Users needing regular nudges for self-checks</strong>
+                    <span class="example">Check nail biting or face touching</span>
+                </li>
+                <li>
+                    <strong>Anyone looking for gentle reminders to build routines</strong>
+                    <span class="example">Drink water regularly</span>
+                </li>
+                <li>
+                    <strong>Those who want to check-in quickly without opening the app</strong>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+</body>
+</html>
