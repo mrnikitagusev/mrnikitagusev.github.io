@@ -159,6 +159,19 @@
             left: 0;
         }
 
+        .use-cases-list li {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .use-cases-list .example {
+            font-size: 15px;
+            color: #86868b;
+            font-style: italic;
+            margin-left: 0;
+        }
+
         .footer-links {
             text-align: center;
             border-top: 1px solid #e5e5e7;
@@ -225,8 +238,7 @@
         <div class="header">
             <img src="app_icon.png" alt="Habipush App Icon" class="app-icon">
             <h1>Habipush</h1>
-            <p class="tagline">Build better habits with intelligent reminders and progress tracking</p>
-            <p class="description">Stop forgetting your habits. Habipush sends smart notifications throughout the day to keep you consistent, and beautiful charts show your progress over time.</p>
+            <p class="tagline">Take control of your habits effortlessly. Set custom reminders and track progress with quick check-ins right from notifications.</p>
             <a href="#" class="download-button">Download on App Store</a>
         </div>
 
@@ -261,10 +273,21 @@
         <div class="use-cases-section">
             <h2>Perfect For</h2>
             <ul class="use-cases-list">
-                <li>People who want to control unconscious habits — e.g. check posture, relax shoulders</li>
-                <li>Users needing regular nudges for self-checks — e.g. check nail biting or face touching</li>
-                <li>Anyone looking for gentle reminders to build routines — e.g. drink water regularly</li>
-                <li>Those who prefer quick check-ins right from notifications — no need to open the app</li>
+                <li>
+                    <strong>People who want to control unconscious habits</strong>
+                    <span class="example">Check posture, relax shoulders</span>
+                </li>
+                <li>
+                    <strong>Users needing regular nudges for self-checks</strong>
+                    <span class="example">Check nail biting or face touching</span>
+                </li>
+                <li>
+                    <strong>Anyone looking for gentle reminders to build routines</strong>
+                    <span class="example">Drink water regularly</span>
+                </li>
+                <li>
+                    <strong>Those who want to check-in quickly without opening the app</strong>
+                </li>
             </ul>
         </div>
 
