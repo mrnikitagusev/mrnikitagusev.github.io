@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Казахстан · 2026</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Путеводитель по Астане и Алматы — маршруты, достопримечательности и рестораны, август 2026">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var hash = location.hash.slice(1);
+      var city = 'astana';
+      var day = '4';
+      var match = hash.match(/^(astana|almaty)-day-(\d+)$/);
+
+      if (match) {
+        city = match[1];
+        day = match[2];
+      } else if (hash === 'almaty') {
+        city = 'almaty';
+        day = '9';
+      }
+
+      document.documentElement.dataset.city = city;
+      document.documentElement.dataset.day = day;
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__badge">4 — 14 августа 2026</p>
+      <h1 class="hero__title">Путеводитель<br>по Казахстану</h1>
+      <p class="hero__subtitle">Астана и Алматы — маршруты по дням, лучшие места, рестораны и вечерние прогулки</p>
+      <div class="hero__actions">
+        <a href="#guide" class="hero__cta">Открыть маршруты</a>
+        <a href="#bonus" class="hero__cta hero__cta--secondary">Что нужно знать</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="guide" id="guide">
+    <div class="tabs-bar">
+      <div class="tabs-bar__inner">
+        <div class="tabs tabs--city">
+          <button type="button" class="tabs__btn" data-city-tab="astana">Астана · 4–8 авг</button>
+          <button type="button" class="tabs__btn" data-city-tab="almaty">Алматы · 9–14 авг</button>
+        </div>
+        <div class="tabs tabs--day" data-day-tabs="astana">
+          <button type="button" class="tabs__btn" data-day-tab="4">4 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="5">5 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="6">6 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="7">7 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="8">8 авг</button>
+        </div>
+        <div class="tabs tabs--day" data-day-tabs="almaty">
+          <button type="button" class="tabs__btn" data-day-tab="9">9 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="10">10 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="11">11 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="12">12 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="13">13 авг</button>
+          <button type="button" class="tabs__btn" data-day-tab="14">14 авг</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Астана -->
+      <div class="city-panel" data-city-panel="astana">
+
+        <section class="day" id="astana-day-4" data-day-section="4">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">4</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Байтерек и площадь Независимости</h2>
+              <p class="day__theme">Символы столицы и центральная ось города</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 12:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Байтерек, Бульвар Нуржол</h3>
+                  <p class="card__desc">Главный символ Астаны — башня высотой 97 метров с смотровой площадкой и отпечатком ладони первого президента. Бульвар Нуржол — центральная ось города с фонтанами и современной архитектурой.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">12:30 – 13:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Ақ Орда</h3>
+                  <p class="card__desc">Резиденция президента Казахстана — величественный белый дворец на берегу Ишима. Осмотр снаружи, лучшие ракурсы — с моста через реку.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Обед</span>
+                  <time class="card__time">13:30 – 14:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Tagam</h3>
+                  <p class="card__desc">Обед рядом с Ақ Орда — удобная точка между резиденцией и площадью Независимости.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">14:30 – 18:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Площадь Независимости, Президентский парк, Монумент «Қазақ Елі», Мечеть Хазрет Султан</h3>
+                  <p class="card__desc">Обширный комплекс в центре города: монумент «Қазақ Елі», одна из крупнейших мечетей Центральной Азии — Хазрет Султан, и зелёный Президентский парк для прогулки.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин</span>
+                  <time class="card__time">19:30 – 21:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Sandyq</h3>
+                  <p class="card__desc">Ресторан казахской и евразийской кухни в атмосферном интерьере. Идеален для знакомства с национальной гастрономией.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:00 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Байтерек, Бульвар Нуржол</h3>
+                  <p class="card__desc">Вечерняя прогулка по подсвеченному бульвару — Астана по-настоящему преображается после заката.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="astana-day-5" data-day-section="5">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">5</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Музеи и набережная</h2>
+              <p class="day__theme">Культура, архитектура и река Ишим</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 13:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Национальный музей</h3>
+                  <p class="card__desc">Крупнейший музей Казахстана — история, культура и искусство от древности до современности. Зал «Altai Golden Man» — must see.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Обед</span>
+                  <time class="card__time">13:00 – 14:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Sf</h3>
+                  <p class="card__desc">Обед рядом с Национальным музеем — перед Дворцом мира и прогулкой по набережной.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">14:00 – 15:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Дворец мира и согласия</h3>
+                  <p class="card__desc">Знаменитая стеклянная пирамида Норманна Фостера — символ религиозного единства. Экскурсия внутрь с залами конфессий.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">15:30 – 17:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Набережная + речной трамвай</h3>
+                  <p class="card__desc">Прогулка по набережной реки Ишим и поездка на речном трамвае — необычный способ увидеть город с воды.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--social">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--social">Встреча</span>
+                  <time class="card__time">19:00 – 21:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Встреча с другом в ресторане</h3>
+                  <p class="card__desc">Вечерняя встреча — место по договорённости.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:30 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Хан Шатыр</h3>
+                  <p class="card__desc">Гигантский прозрачный тент — торгово-развлекательный центр с парком, кафе и аттракционами. Вечером особенно красив.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="astana-day-6" data-day-section="6">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">6</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Годовщина</h2>
+              <p class="day__theme">Расслабленный день — парки, шопинг и особый ужин</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 11:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Парк Влюблённых</h3>
+                  <p class="card__desc">Романтичный парк с аллеями, скульптурами и видом на реку. Спокойное начало особенного дня.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">11:00 – 17:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Хан Шатыр</h3>
+                  <p class="card__desc">Целый день в «Хан Шатыре» — шопинг, обед внутри, tropical beach club, прогулки. Можно не спешить.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food card--highlight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин ★</span>
+                  <time class="card__time">19:00 – 21:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Qazaq Gourmet</h3>
+                  <p class="card__desc">Премиальный ресторан авторской казахской кухни — идеальное место для праздничного ужина в честь годовщины.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:30 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Президентский центр, Президентский парк, площадь Независимости</h3>
+                  <p class="card__desc">Завершение дня прогулкой по подсвеченным площадям — романтичная атмосфера и красивые виды.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="astana-day-7" data-day-section="7">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">7</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Ailand, EXPO, Mega</h2>
+              <p class="day__theme">Развлечения, EXPO-наследие и шопинг</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 13:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Ailand + Центральный парк</h3>
+                  <p class="card__desc">Ailand — океанариум с подводным тоннелем и морскими обитателями. Центральный парк рядом — для прогулки после визита.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Обед</span>
+                  <time class="card__time">13:30 – 14:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Удача</h3>
+                  <p class="card__desc">Обед в Центральном парке — удобно после Ailand, перед EXPO.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">15:00 – 17:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Nur Alem, EXPO-парк</h3>
+                  <p class="card__desc">Сферический павильон EXPO-2017 — музей «Энергия будущего» с интерактивными экспозициями. EXPO-парк — прогулка по территории выставки.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">17:30 – 18:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Университет Назарбаева</h3>
+                  <p class="card__desc">Современный кампус на левом берегу — архитектура мирового уровня. Короткая остановка для фото.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Шопинг</span>
+                  <time class="card__time">18:00 – 21:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Mega Silk Way</h3>
+                  <p class="card__desc">Крупнейший ТРЦ Астаны — шопинг, кино, фуд-корт. Можно провести весь вечер.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:30 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Nur Alem, EXPO-парк</h3>
+                  <p class="card__desc">EXPO-парк вечером — подсветка сферы Nur Alem создаёт фантастическую атмосферу.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="astana-day-8" data-day-section="8">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">8</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Ботанический сад + Центральная мечеть</h2>
+              <p class="day__theme">Природа, архитектура и финальный день</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 12:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Ботанический сад. Триумфальная арка</h3>
+                  <p class="card__desc">Зелёный оазис в городе — аллеи, розарий, теплицы. Триумфальная арка — красивая точка для финальных фото.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Обед</span>
+                  <time class="card__time">12:30 – 13:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Тагам</h3>
+                  <p class="card__desc">Обед рядом с Ботаническим садом — перед финальным визитом в Центральную мечеть.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">14:00 – 16:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Центральная мечеть</h3>
+                  <p class="card__desc">Одна из крупнейших мечетей в Центральной Азии — величественная архитектура, просторный внутренний двор. Финальная точка маршрута.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Алматы -->
+      <div class="city-panel" data-city-panel="almaty">
+
+        <section class="day" id="almaty-day-9" data-day-section="9">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">9</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Центр города</h2>
+              <p class="day__theme">Исторический центр, базар и главная пешеходная улица</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Обед</span>
+                  <time class="card__time">15:30 – 16:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Qaganat / Basilic</h3>
+                  <p class="card__desc">Обед перед прогулкой по центру — удобные сети с казахской и европейской кухней.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">16:00 – 17:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Парк 28 гвардейцев-панфиловцев, Вознесенский собор, Мемориал с вечным огнём</h3>
+                  <p class="card__desc">Зелёный парк в самом сердце Алматы — деревянный Вознесенский собор из красного дерева и мемориал героям Великой Отечественной войны.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">17:00 – 19:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Зелёный базар, Центральная мечеть</h3>
+                  <p class="card__desc">Главный рынок города — специи, сухофрукты, кумыс и местные деликатесы. Рядом — современная Центральная мечеть с красивым интерьером.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин</span>
+                  <time class="card__time">19:30 – 21:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">NAVAT</h3>
+                  <p class="card__desc">Ресторан восточной кухни в стиле восточного базара — атмосферное место для первого вечера в Алматы.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:00 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Жибек Жолы</h3>
+                  <p class="card__desc">Главная пешеходная улица Алматы — кафе, витрины, уличные музыканты. Вечером особенно оживлённая.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="almaty-day-10" data-day-section="10">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">10</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Кок-Тобе, площадь Республики</h2>
+              <p class="day__theme">Гора в центре города и современный центр</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 10:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Гостиница Казахстан</h3>
+                  <p class="card__desc">Легендарная высотка советской эпохи — символ Алматы. Осмотр снаружи и вид на город с площади.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:30 – 16:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Кок-Тобе</h3>
+                  <p class="card__desc">Гора с канатной дорогой, колесом обозрения, памятником The Beatles, fast coaster и иллюзионом. Панорама города и обед на вершине.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">16:00 – 17:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Площадь Республики, монумент Независимости, Национальный центральный музей</h3>
+                  <p class="card__desc">Главная площадь города с монументом «Независимость» и золотым солдатом. Национальный музей — осмотр снаружи, впечатляющая архитектура.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Шопинг</span>
+                  <time class="card__time">17:30 – 20:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Dostyk Plaza</h3>
+                  <p class="card__desc">Современный торговый центр на проспекте Достык — шопинг, кафе и отдых.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">20:00 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Проспект Достык, центр</h3>
+                  <p class="card__desc">Вечерняя прогулка по главному проспекту — зелёные аллеи, кафе и вид на огни города.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="almaty-day-11" data-day-section="11">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">11</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Медеу и Шымбулак</h2>
+              <p class="day__theme">Горы и горнолыжный курорт</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 18:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Медеу + Шымбулак</h3>
+                  <p class="card__desc">Медеу и канатная дорога на Шымбулак — горные пейзажи, свежий воздух и панорамы Заилийского Алатау. Можно провести весь день.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин</span>
+                  <time class="card__time">19:30 – 20:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Qaganat / Basilic</h3>
+                  <p class="card__desc">Ужин после горного дня — спокойный финал перед вечерней прогулкой.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">20:30 – 22:30</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Улица Панфилова</h3>
+                  <p class="card__desc">Историческая улица рядом с парком 28 гвардейцев — вечерняя атмосфера старого центра Алматы.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="almaty-day-12" data-day-section="12">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">12</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Экскурсия</h2>
+              <p class="day__theme">Чарын, Чёрный каньон, озёра Кольсай и Каинды</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--excursion">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--excursion">Экскурсия</span>
+                  <time class="card__time">05:30 – 22:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Природные чудеса Алматы</h3>
+                  <p class="card__desc">Целый день на природе: Чарынский каньон и Долина замков, Чёрный каньон, озеро Кольсай и затопленный лес озера Каинды. Ранний выезд — захватите перекус и удобную обувь.</p>
+                  <a class="card__link" href="https://www.sputnik8.com/ru/almaty/activities/88949-prirodnye-chudesa-almaty-dolina-zamkov-charynskiy-i-chernyy-kanony-ozera-kolsay-i-kaindy?event_date=2026-08-12&option_id=88949&event_id=220518764&ticket_id_128254=1" target="_blank" rel="noopener">Забронировать на Sputnik8 →</a>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин</span>
+                  <time class="card__time">22:00 – 23:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Qaganat / Basilic</h3>
+                  <p class="card__desc">Поздний ужин после долгого дня — восстановить силы перед отдыхом.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="almaty-day-13" data-day-section="13">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">13</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Большое Алматинское озеро</h2>
+              <p class="day__theme">Горное озеро и центральный парк</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 16:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Аюсай, Большое Алматинское озеро</h3>
+                  <p class="card__desc">Поездка к бирюзовому горному озеру на электровелосипеде — живописный маршрут через ущелье.</p>
+                  <a class="card__link" href="https://electrobikes.kz/electro-booking-request/?item_code=MEdCMVgwNTQ3MDEyNDA0MTAwNTQ3MDE" target="_blank" rel="noopener">Забронировать электровелосипед →</a>
+                </div>
+              </div>
+            </article>
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">17:00 – 19:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Центральный парк им. Горького</h3>
+                  <p class="card__desc">Главный парк Алматы — аллеи, аттракционы, фонтан и вид на горы. Спокойное завершение активного дня.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--food">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--food">Ужин</span>
+                  <time class="card__time">19:30 – 21:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Огонёк</h3>
+                  <p class="card__desc">Ресторан с домашней атмосферой — уютный ужин в центре города.</p>
+                </div>
+              </div>
+            </article>
+            <article class="card card--walk">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--walk">Вечерняя прогулка</span>
+                  <time class="card__time">21:00 – 22:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Центр</h3>
+                  <p class="card__desc">Короткая вечерняя прогулка по центру — последние впечатления от города.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="day" id="almaty-day-14" data-day-section="14">
+          <div class="day__header">
+            <div class="day__date">
+              <span class="day__number">14</span>
+              <span class="day__month">августа</span>
+            </div>
+            <div class="day__info">
+              <h2 class="day__title">Завершающая прогулка</h2>
+              <p class="day__theme">Последние покупки и прощание с городом</p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="card card--sight">
+              <div class="card__body">
+                <div class="card__aside">
+                  <span class="card__badge card__badge--sight">Достопримечательность</span>
+                  <time class="card__time">10:00 – 11:00</time>
+                </div>
+                <div class="card__main">
+                  <h3 class="card__title">Зелёный базар, центр</h3>
+                  <p class="card__desc">Финальный визит на базар за сувенирами и угощениями — и короткая прогулка по центру перед отъездом.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <section class="bonus" id="bonus">
+    <div class="bonus__inner">
+      <div class="bonus__header">
+        <h2 class="bonus__title">Что нужно знать</h2>
+        <p class="bonus__subtitle">Материалы для полного погружения</p>
+      </div>
+      <div class="bonus__grid">
+        <div class="bonus__player">
+          <iframe
+            src="https://vk.com/video_ext.php?oid=-204611718&id=456239020&hd=2"
+            title="Видео 1"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="bonus__player">
+          <iframe
+            src="https://vk.com/video_ext.php?oid=-135209264&id=456243662&hd=2"
+            title="Видео 2"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Казахстан · 2026</p>
+    <a href="#top" class="footer__top">↑ Наверх</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
